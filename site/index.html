@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV · Portfolio</title>
+  <meta name="description" content="A multidisciplinary engineering CV and portfolio." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://github.com" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Top bar ============ -->
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" data-bind="brandName">CV</a>
+    <nav class="nav" id="nav" aria-label="Sections"><!-- field links injected --></nav>
+    <div class="topbar-actions">
+      <button id="print-btn" class="btn-icon" title="Print / save as PDF" aria-label="Print or save as PDF">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6 9V3h12v6h2a2 2 0 0 1 2 2v6h-4v4H6v-4H2v-6a2 2 0 0 1 2-2h2zm2-4v4h8V5H8zm0 12v4h8v-4H8z"/></svg>
+      </button>
+      <button id="theme-btn" class="btn-icon" title="Toggle light / dark" aria-label="Toggle light or dark theme">
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0-5v3m0 14v3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M2 12h3m14 0h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <span id="top"></span>
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="eyebrow" data-bind="available"></p>
+        <h1 class="hero-name" data-bind="name"></h1>
+        <p class="hero-role" data-bind="role"></p>
+        <p class="hero-tagline" data-bind="tagline"></p>
+        <div class="hero-meta">
+          <span class="meta-loc" data-bind="location"></span>
+        </div>
+        <div class="hero-links" id="hero-links"><!-- links injected --></div>
+        <div class="field-chips" id="field-chips" aria-label="Jump to a field"><!-- chips injected --></div>
+        <dl class="stats" id="stats"><!-- stats injected --></dl>
+      </div>
+    </section>
+
+    <!-- ============ Fields & projects ============ -->
+    <div id="fields"><!-- field sections injected --></div>
+
+    <!-- ============ Ecosystems studied/used ============ -->
+    <section class="block" id="ecosystems">
+      <div class="block-head">
+        <h2>Ecosystems I work with</h2>
+        <p class="block-note" id="eco-note"></p>
+      </div>
+      <div class="eco-grid" id="eco-grid"><!-- injected --></div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="block" id="skills">
+      <div class="block-head"><h2>Skills</h2></div>
+      <div class="skills-grid" id="skills-grid"><!-- injected --></div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="footer-links" id="footer-links"><!-- injected --></div>
+    <p class="footer-note">
+      <span data-bind="name"></span> · built as a self-hosted static site ·
+      <span id="year"></span>
+    </p>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
