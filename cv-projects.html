@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Geri Capo — Projects CV</title>
+<style>
+  @page { size: A4; margin: 14mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a; margin: 0; font-size: 10pt; line-height: 1.45;
+  }
+  a { color: #1a4d8f; text-decoration: none; }
+  header { margin-bottom: 10pt; }
+  .avail { display: inline-block; font-size: 8pt; color: #2e6b34; border: 1px solid #b9d6bd;
+           background: #f0f7f1; border-radius: 10px; padding: 1px 8px; margin-bottom: 4pt; }
+  h1 { font-size: 24pt; margin: 0 0 2pt; letter-spacing: -0.5pt; }
+  .role { font-size: 11.5pt; font-weight: 600; color: #333; margin: 0 0 6pt; }
+  .contact { font-size: 9pt; color: #444; }
+  .contact span { margin-right: 10pt; }
+  .ai-note {
+    border: 1px solid #d8d8d8; background: #f7f7f7; border-radius: 4px;
+    padding: 6pt 9pt; font-size: 9pt; font-style: italic; color: #333; margin: 8pt 0 12pt;
+  }
+  h2 {
+    font-size: 11.5pt; margin: 12pt 0 5pt; padding-bottom: 2pt;
+    border-bottom: 1.5px solid #2c3e50; color: #2c3e50;
+    break-after: avoid; page-break-after: avoid;
+  }
+  .proj { margin: 0 0 7pt; break-inside: avoid; page-break-inside: avoid; }
+  .proj .head { font-size: 10.5pt; }
+  .proj .name { font-weight: 700; font-family: "SF Mono", Menlo, monospace; font-size: 9.5pt; }
+  .proj .link { font-size: 8pt; color: #777; margin-left: 6pt; }
+  .proj .blurb { margin: 1pt 0 1pt; }
+  .proj .tags { font-size: 8pt; color: #666; }
+  .upstream { margin: 0; padding: 0; list-style: none; }
+  .upstream li { margin: 0 0 3.5pt; font-size: 9.5pt; break-inside: avoid; }
+  .upstream .name { font-weight: 600; }
+  .upstream-note { font-size: 8.5pt; color: #666; font-style: italic; margin: 2pt 0 6pt; }
+  footer { margin-top: 14pt; padding-top: 5pt; border-top: 1px solid #ddd;
+           font-size: 8pt; color: #888; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="avail">Open to opportunities</div>
+  <h1>Geri Capo</h1>
+  <p class="role">Multidisciplinary Software &amp; ML Engineer</p>
+  <p class="contact">
+    <span>✉ <a href="mailto:geriicapo98@gmail.com">geriicapo98@gmail.com</a></span>
+    <span>⌥ <a href="https://github.com/gericapo98">github.com/gericapo98</a></span>
+    <span>⌥ <a href="https://github.com/0x000-byte">github.com/0x000-byte</a></span>
+  </p>
+</header>
+
+<div class="ai-note">
+  Most of these projects were built with AI-assisted development: I direct the architecture
+  and requirements, use LLM tooling for implementation, and review, test, and verify the
+  results myself.
+</div>
+
+<h2>AI, LLMs &amp; Applied GenAI</h2>
+
+<div class="proj">
+  <div class="head"><span class="name">modelica-genai-lab</span><span class="link">github.com/gericapo98/modelica-genai-lab</span></div>
+  <div class="blurb">Automated Modelica model generation, compilation &amp; verification with GenAI. Pipeline: prompt → .mo model → OpenModelica simulation → numeric comparison (RMSE/tolerance) → optional STL property checks → deviation report.</div>
+  <div class="tags">GenAI · Modelica · OMPython · FMU/FMPy · RTAMT (STL) · Verification</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">langchain-rpa-simkit</span><span class="link">github.com/0x000-byte/langchain-rpa-simkit</span></div>
+  <div class="blurb">LangChain toolkit that simulates RPA / agent workflows with typed (pydantic) chains, packaged with uv and covered by tests.</div>
+  <div class="tags">LangChain · Agents · Python · pydantic</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">intent-engine</span><span class="link">github.com/0x000-byte/intent-engine</span></div>
+  <div class="blurb">Natural-language intent engine: candidate generation, NL parsing, and ranking to map free text onto structured intents.</div>
+  <div class="tags">NLP · Intent detection · Python</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">llms-lab</span><span class="link">github.com/gericapo98/llms-lab</span></div>
+  <div class="blurb">Experiments in LLM reasoning — DeepSeek-Math evaluation and rStar self-play reasoning tests.</div>
+  <div class="tags">LLMs · Reasoning · Evaluation</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">asr</span><span class="link">local project</span></div>
+  <div class="blurb">Whisper-based pipeline that transcribes lecture audio into aligned SRT / VTT / TSV transcripts.</div>
+  <div class="tags">ASR · Whisper · Python</div>
+</div>
+
+<h2>Robotics &amp; Autonomy</h2>
+
+<div class="proj">
+  <div class="head"><span class="name">ros2-common-setup</span><span class="link">github.com/0x000-byte/ros2-common-setup</span></div>
+  <div class="blurb">Reusable ROS 2 Rolling environment setup, including bring-up on macOS.</div>
+  <div class="tags">ROS 2 · DevOps · macOS</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">robot_sim</span><span class="link">local project</span></div>
+  <div class="blurb">A ROS 2 simulation playground for trying out robotics ideas.</div>
+  <div class="tags">ROS 2 · Simulation</div>
+</div>
+
+<h2>Data Engineering &amp; Visualization</h2>
+
+<div class="proj">
+  <div class="head"><span class="name">pyduck-iceberg</span><span class="link">github.com/gericapo98/pyduck-iceberg</span></div>
+  <div class="blurb">A DuckDB + Apache Iceberg lakehouse pipeline with a command-line interface and a fully Dockerized stack.</div>
+  <div class="tags">DuckDB · Apache Iceberg · Lakehouse · CLI · Docker</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">visualization-lab</span><span class="link">github.com/0x000-byte/visualization-lab</span></div>
+  <div class="blurb">Hybrid toolkit for dynamic animations with Manim (Python) and plots with Julia — built for explainers, demo videos, and interactive storytelling.</div>
+  <div class="tags">Manim · Julia · Animation · SVG</div>
+</div>
+
+<h2>Systems, Security &amp; Tooling</h2>
+
+<div class="proj">
+  <div class="head"><span class="name">mangodex-client</span><span class="link">github.com/gericapo98/mangadex-go-cli</span></div>
+  <div class="blurb">A Go command-line client for the MangaDex API, with OAuth token auth and OS-keyring refresh-token storage.</div>
+  <div class="tags">Go · CLI · REST API</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">system-design-templates</span><span class="link">local project</span></div>
+  <div class="blurb">A single-server system-design reference: a Node/Express web service with a SQL schema and JWT/bcrypt auth.</div>
+  <div class="tags">Node.js · Express · SQL · JWT</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">ubuntu-sandbox</span><span class="link">github.com/0x000-byte/ubuntu-sandbox</span></div>
+  <div class="blurb">A reproducible Ubuntu development sandbox provisioned via cloud-init.</div>
+  <div class="tags">Docker · Linux · IaC · cloud-init</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">kahoot-dl</span><span class="link">local project</span></div>
+  <div class="blurb">Python tool to bulk-download all public Kahoot quizzes for a given creator.</div>
+  <div class="tags">Python · CLI · Scraping</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">cv-portfolio</span><span class="link">local project</span></div>
+  <div class="blurb">A self-hosted single-page CV/portfolio site of static files served by nginx in Docker — the source of this very document.</div>
+  <div class="tags">HTML · JavaScript · nginx · Docker</div>
+</div>
+
+<h2>Foundations &amp; Explorations</h2>
+
+<div class="proj">
+  <div class="head"><span class="name">machine-learning</span><span class="link">local project</span></div>
+  <div class="blurb">ML coursework and notebooks covering clustering, expectation–maximization, and supporting notes.</div>
+  <div class="tags">ML · Clustering · EM · Notebooks</div>
+</div>
+
+<div class="proj">
+  <div class="head"><span class="name">resyst-study</span><span class="link">local project</span></div>
+  <div class="blurb">A self-built web study app (quiz + materials) for a Reactive Systems course.</div>
+  <div class="tags">Web · JavaScript · Study tool</div>
+</div>
+
+<h2>Open-Source Ecosystems — Studied &amp; Worked With</h2>
+<p class="upstream-note">Listed for transparency: third-party codebases I have studied, run, or contributed to — not authored by me.</p>
+
+<ul class="upstream">
+  <li><span class="name">ServePRO</span> — tennis/badminton serve analyzer (audio detection + CV trajectory fitting); <em>contributor</em>.</li>
+  <li><span class="name">Hugging Face Transformers</span> — studied/used for LLM workflows.</li>
+  <li><span class="name">Ollama</span> — ran the local LLM runtime.</li>
+  <li><span class="name">Apple MLX (mlx-lm)</span> — running and fine-tuning LLMs on Apple silicon.</li>
+  <li><span class="name">Odysseus</span> — local-first self-hosted AI workspace; deployed and operate my own instance.</li>
+  <li><span class="name">arena2d</span> — deep-RL robot navigation in 2D simulation.</li>
+  <li><span class="name">flying_adversarial_patch</span> — adversarial patches against multirotor pose estimation.</li>
+  <li><span class="name">Snort 3</span> — network intrusion detection &amp; prevention system.</li>
+  <li><span class="name">Zeek</span> — network-security monitoring.</li>
+</ul>
+
+<footer>
+  Geri Capo · geriicapo98@gmail.com · github.com/gericapo98 · github.com/0x000-byte — June 2026
+</footer>
+
+</body>
+</html>

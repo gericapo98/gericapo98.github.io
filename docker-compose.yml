@@ -1,0 +1,8 @@
+services:
+  cv:
+    build: .
+    image: cv-portfolio:latest
+    container_name: cv-portfolio
+    ports:
+      - "8080:80"          # browse at http://localhost:8080  (change left number to taste)
+    restart: unless-stopped
