@@ -2,7 +2,7 @@
 FROM nginx:1.27-alpine
 
 # Site content
-COPY site/ /usr/share/nginx/html/
+COPY docs/ /usr/share/nginx/html/
 
 # Server config (gzip, caching, security headers, SPA-style fallback)
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf

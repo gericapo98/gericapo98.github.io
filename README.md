@@ -10,7 +10,7 @@ The content was auto-generated from your `~/repos` and split into:
 - **Ecosystems I work with** — upstream codebases you studied/used (clearly labelled, never claimed as yours).
 
 > Personal details (name, location, email, links) are **placeholders** — edit them
-> in [`site/assets/data.js`](site/assets/data.js). Every word on the page comes from
+> in [`docs/assets/data.js`](docs/assets/data.js). Every word on the page comes from
 > that one file.
 
 ---
@@ -50,7 +50,7 @@ Point a reverse proxy / your domain at port 8080 (or change the published port t
 Any static file server works — no toolchain needed:
 
 ```sh
-cd cv-portfolio/site
+cd cv-portfolio/docs
 python3 -m http.server 8080        # http://localhost:8080
 ```
 
@@ -58,7 +58,7 @@ python3 -m http.server 8080        # http://localhost:8080
 
 ## Edit your content
 
-Open [`site/assets/data.js`](site/assets/data.js). It's a single `window.CV = { … }`
+Open [`docs/assets/data.js`](docs/assets/data.js). It's a single `window.CV = { … }`
 object:
 
 | Key             | What it controls                                              |
@@ -91,7 +91,7 @@ first visit follows your OS preference.
 
 ```
 cv-portfolio/
-├── site/
+├── docs/
 │   ├── index.html            # static shell
 │   └── assets/
 │       ├── data.js           # <-- YOUR CONTENT (edit this)
